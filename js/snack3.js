@@ -11,18 +11,15 @@ BTN.addEventListener('click', function () {
     Numeri.push(numeriValue);
     if (Numeri.length === 10) {
         console.table(Numeri);
-        NumeriCont.classList.add('d-none');
-        BTN.classList.add('d-none');
-        Label.classList.add('d-none');
-        let numeriPrint = 0;
+        let numeriStamp = 0;
         while (c < 10) {
-            let numeriStamp = Numeri[c];
+            let numeriIns = Numeri[c];
             if (c % 2) {
-                numeriPrint += numeriStamp;
+                numeriStamp += numeriIns;
             }
-            console.log(numeriPrint);
+            console.log(numeriStamp);
             c++
         }
-        SommaDispari.innerText = numeriPrint;
+        SommaDispari.innerText = numeriStamp;
     }
 });
